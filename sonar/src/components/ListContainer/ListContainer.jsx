@@ -1,7 +1,10 @@
 
-const ListContainer = () => {
+const ListContainer = (props) => {
   return (
-    <h2>Primer Entrega</h2>
+    
+    <div>
+      <h2>{props.titulo}</h2>
+    </div>
 
   )
 }

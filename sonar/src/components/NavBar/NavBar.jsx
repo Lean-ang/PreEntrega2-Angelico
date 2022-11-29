@@ -19,7 +19,7 @@ const NavBar = () => {
           <Nav.Link href="#action2">Iluminación</Nav.Link>
         </Nav>
         <div className="d-flex">
-            <Nav.Link href="#action2"><CardWidget/></Nav.Link>
+            <Nav.Link href="#action2"><CardWidget/>4</Nav.Link>
         </div>
       </Navbar.Collapse>
     </Container>

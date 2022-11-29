@@ -7,15 +7,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function App() {
-  let greeting=	'Bienvenido/a'
-
   return (
     <div>
       <NavBar 
       />
-      <ListContainer 
-      greeting={greeting}
+      <ListContainer titulo="Greeting"
       />
+      
       
     </div>
     
