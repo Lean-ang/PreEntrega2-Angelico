@@ -1,13 +1,14 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import { Link, NavLink } from 'react-router-dom';
 import CardWidget from '../CartWidget/CartWidget';
 import '../NavBar/navbar.css'
 const NavBar = () => {
   return (
     <Navbar bg="light" expand="lg">
     <Container fluid>
-      <Navbar.Brand href="#">Sonar</Navbar.Brand>
+    <NavLink className={ ( {isActive} )=> isActive ? 'btn btn-success' : 'btn btn-outline-success'} to='/node_modules'>Sonar</NavLink>
       <Navbar.Toggle aria-controls="navbarScroll" />
       <Navbar.Collapse id="navbarScroll">
         <Nav
@@ -15,11 +16,21 @@ const NavBar = () => {
           style={{ maxHeight: '100px' }}
           navbarScroll
         >
-          <Nav.Link href="#action1">Sonido</Nav.Link>
-          <Nav.Link href="#action2">Iluminación</Nav.Link>
+          <NavLink 
+               className={ ( {isActive} )=> isActive ? 'btn btn-success' : 'btn btn-outline-success'} 
+                to="/categoria/gorra"
+                >
+                         Sonido
+          </NavLink>
+          <NavLink 
+                className={ ( {isActive} )=> isActive ? 'btn btn-success' : 'btn btn-outline-success'} 
+                to="/categoria/remera"
+                >
+                        Iluminación
+                </NavLink>
         </Nav>
         <div className="d-flex">
-            <Nav.Link href="#action2"><CardWidget/>4</Nav.Link>
+            <Link to='/cart'><CardWidget/>4</Link>
         </div>
       </Navbar.Collapse>
     </Container>
