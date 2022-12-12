@@ -2,7 +2,7 @@ import { ItemCount } from "../ItemCount/ItemCount"
 
 
 const ItemDetail = ({product}) => {
-  const onAdd=(cantidad)=> console.log("cantidad de productos: ", cantidad)
+  const onAdd=(cantidad)=> alert(`cantidad de productos: ${cantidad}`)
   console.log(product)
   return (
     <div className="row">
