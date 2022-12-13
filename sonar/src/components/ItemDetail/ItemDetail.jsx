@@ -6,11 +6,11 @@ const ItemDetail = ({product}) => {
   console.log(product)
   return (
     <div className="row">
-        <div className="col">
+        <div className="col text-center">
             <h2>{product.name}</h2>
             <img src={product.foto} className="w-50" alt="imagen del producto"/>
             <h4>Categoria: {product.categoria}</h4>
-            <h4>Precio: {product.precio}</h4>
+            <h4>Precio: {product.price}</h4>
         </div>
         <div className="col">
             <ItemCount stock={10}

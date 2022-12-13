@@ -24,7 +24,7 @@ const ItemListContainer = (props) => {
   return (
     
     <>
-      <h2>{props.titulo}</h2>
+      <h2 className="text-center">{props.titulo}</h2>
       {
         loading ?
         <h2>Cargando productos</h2>

@@ -21,15 +21,15 @@ const NavBar = () => {
           </NavLink>
           <NavLink 
                className={ ( {isActive} )=> isActive ? 'btn btn' : 'btn btn'} 
-                to="/categoria/gorra"
+                to="/categoria/iluminacion"
                 >
-                         Sonido
+                         Iluminacion
           </NavLink>
           <NavLink 
                 className={ ( {isActive} )=> isActive ? 'btn btn' : 'btn btn' } 
-                to="/categoria/remera"
+                to="/categoria/sonido"
                 >
-                         Iluminación 
+                         Sonido 
                 </NavLink>
         </Nav>
         <div className="d-flex">

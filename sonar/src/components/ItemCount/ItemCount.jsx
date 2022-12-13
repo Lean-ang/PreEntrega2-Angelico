@@ -18,17 +18,17 @@ export const ItemCount = ({stock=9, initial=1, onAdd}) => {
         <center className="mt-5">
         <button 
             className="btn btn-outline-primary" 
-            onClick={handleCount} 
+            onClick={restar} 
         > 
-            + 
+            - 
         </button>     
         <label htmlFor="">{count}</label>
       
         <button 
             className="btn btn-outline-primary" 
-            onClick={restar} 
+            onClick={handleCount} 
         > 
-            - 
+            + 
         </button> 
         <br />    
         <button 

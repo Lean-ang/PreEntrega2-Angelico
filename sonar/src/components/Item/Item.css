@@ -1,0 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto+Mono:ital@1&family=Yaldevi&display=swap');
+/*font-family: 'Noto Sans', sans-serif;*/
+a:link, a:visited, a:active {
+    text-decoration:none;
+    font-family: 'Noto Sans', sans-serif;
+    color: black;
+}
