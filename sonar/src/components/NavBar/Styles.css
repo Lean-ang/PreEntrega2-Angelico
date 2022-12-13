@@ -1,13 +1,17 @@
  @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&family=Yaldevi&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto+Mono:ital@1&family=Yaldevi&display=swap');
  /*font-family: 'Roboto Mono', monospace;*/
+ /*font-family: 'Noto Sans', sans-serif;*/
 
-.contenedor{
-    background-color: rgb(255, 255, 255);
-}
+
+
 .logo{
-    color: rgb(255, 0, 0);
-    text-decoration: none;
     font-family: 'Roboto Mono', monospace;
-    font-size: 300px;
+}
 
+.botones{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Noto Sans', sans-serif;
 }

@@ -1,6 +1,5 @@
 import Container from 'react-bootstrap/Container';
 import NavbarBrand from 'react-bootstrap/esm/NavbarBrand';
-import NavbarCollapse from 'react-bootstrap/esm/NavbarCollapse';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Link, NavLink } from 'react-router-dom';
@@ -10,27 +9,27 @@ const NavBar = () => {
   return (
     <Navbar bg="light" expand="lg">
     <Container fluid>
-    <NavbarBrand className='logo'>Sonar</NavbarBrand>
+    <NavbarBrand className='logo'><h3>Sonar</h3></NavbarBrand>
     <Navbar.Toggle aria-controls="navbarScroll" />
       <Navbar.Collapse>
-        <Nav className="me-auto my-2 my-lg-0">
+        <Nav className="me-auto my-2 my-lg-0 botones">
           <NavLink 
-               className={ ( {isActive} )=> isActive ? 'btn btn-success' : 'btn btn-outline-success'} 
+               className={ ( {isActive} )=> isActive ? 'btn' : 'btn'} 
                 to="/node_modules"
                 >
                          Inicio
           </NavLink>
           <NavLink 
-               className={ ( {isActive} )=> isActive ? 'btn btn-success' : 'btn btn-outline-success'} 
+               className={ ( {isActive} )=> isActive ? 'btn btn' : 'btn btn'} 
                 to="/categoria/gorra"
                 >
                          Sonido
           </NavLink>
           <NavLink 
-                className={ ( {isActive} )=> isActive ? 'btn btn-success' : 'btn btn-outline-success'} 
+                className={ ( {isActive} )=> isActive ? 'btn btn' : 'btn btn' } 
                 to="/categoria/remera"
                 >
-                        Iluminación
+                         Iluminación 
                 </NavLink>
         </Nav>
         <div className="d-flex">
