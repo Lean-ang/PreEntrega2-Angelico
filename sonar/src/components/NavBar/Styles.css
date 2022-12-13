@@ -1,0 +1,13 @@
+ @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&family=Yaldevi&display=swap');
+ /*font-family: 'Roboto Mono', monospace;*/
+
+.contenedor{
+    background-color: rgb(255, 255, 255);
+}
+.logo{
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 300px;
+
+}
